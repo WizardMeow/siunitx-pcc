@@ -1,4 +1,4 @@
-import TexError from "mathjax-full/js/input/tex/TexError";
+import TexError from "mathjax-full/mjs/input/tex/TexError.js";
 import * as data from "./resource.en.json";
 
 export class siunitxError {

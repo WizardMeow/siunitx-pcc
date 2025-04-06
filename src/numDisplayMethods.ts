@@ -1,8 +1,8 @@
-import TexParser from "mathjax-full/js/input/tex/TexParser";
+import TexParser from "mathjax-full/mjs/input/tex/TexParser.js";
 import { INumberPiece, IUncertainty } from "./numMethods";
 import { IOptions } from "./options/options";
 import { INumOutputOptions } from "./options/numberOptions";
-import { AbstractMmlTokenNode, MmlNode } from "mathjax-full/js/core/MmlTree/MmlNode";
+import { AbstractMmlTokenNode, MmlNode } from "mathjax-full/mjs/core/MmlTree/MmlNode.js";
 
 const spaceMap: Record<string, string> = {
 	'1em': '\u2001',

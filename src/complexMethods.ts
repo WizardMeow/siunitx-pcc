@@ -1,6 +1,6 @@
-import TexParser from "mathjax-full/js/input/tex/TexParser";
+import TexParser from "mathjax-full/mjs/input/tex/TexParser.js";
 import { INumberPiece, NumberPieceDefault, parseNumber, pieceToNumber } from "./numMethods";
-import { MmlNode } from "mathjax-full/js/core/MmlTree/MmlNode";
+import { MmlNode } from "mathjax-full/mjs/core/MmlTree/MmlNode.js";
 import { IOptions, findOptions } from "./options/options";
 
 import { postProcessNumber } from "./numPostProcessMethods";

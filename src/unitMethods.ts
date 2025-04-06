@@ -1,6 +1,6 @@
-import { MmlNode } from "mathjax-full/js/core/MmlTree/MmlNode";
-import TexError from "mathjax-full/js/input/tex/TexError";
-import TexParser from "mathjax-full/js/input/tex/TexParser";
+import { MmlNode } from "mathjax-full/mjs/core/MmlTree/MmlNode.js";
+import TexError from "mathjax-full/mjs/input/tex/TexError.js";
+import TexParser from "mathjax-full/mjs/input/tex/TexParser.js";
 import { siunitxError } from "./error/errors";
 import { findOptions, IOptions } from "./options/options";
 import { IUnitOptions, QualifierMode } from "./options/unitOptions";

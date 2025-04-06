@@ -3,25 +3,24 @@
 		"outDir": "./js",
 		"noImplicitAny": false,
 		"module": "ES6",
-		"target": "ES2015",
+		"target": "ES2022",
 		"jsx": "preserve",
 		"allowJs": true,
 		"sourceMap": true,
 		"moduleResolution": "node",
 		"resolveJsonModule": true,
 		"lib": [
-			"ES2015",
+			"ES2022",
 			"DOM"
 		],
 		"typeRoots": [
-			"./node_modules/@types",
 			"./types"
 		]
 	},
 	"include": [
 		"src/**/*",
-		"types/localizationResource.d.ts"
-, "types/patch.d.ts"	],
+		"types/localizationResource.d.ts",
+	],
 	"exclude": [
 		"node_modules",
 		"**/*.spec.ts",

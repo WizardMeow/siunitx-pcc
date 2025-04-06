@@ -1,17 +1,17 @@
-import { TeX } from 'mathjax-full/js/input/tex';
-import { Configuration, ParserConfiguration } from 'mathjax-full/js/input/tex/Configuration';
-import { CommandMap, CharacterMap } from 'mathjax-full/js/input/tex/SymbolMap';
-import TexParser from 'mathjax-full/js/input/tex/TexParser';
+import { TeX } from 'mathjax-full/mjs/input/tex.js';
+import { Configuration, ParserConfiguration } from 'mathjax-full/mjs/input/tex/Configuration.js';
+import { CommandMap, CharacterMap } from 'mathjax-full/mjs/input/tex/TokenMap.js';
+import TexParser from 'mathjax-full/mjs/input/tex/TexParser.js';
 import { processAngle } from './angMethods';
 import { processNumber } from './numMethods';
 import { findOptions, IOptions, processSISetup, siunitxDefaults, } from './options/options';
 import { processQuantity } from './qtyMethods';
 import { processUnit } from './unitMethods';
 import { GetArgumentMML } from "./aria-label";
-import NodeUtil from 'mathjax-full/js/input/tex/NodeUtil';
+import NodeUtil from 'mathjax-full/mjs/input/tex/NodeUtil.js';
 
-import { Symbol as TexSymbol } from 'mathjax-full/js/input/tex/Symbol'
-import { TexConstant } from 'mathjax-full/js/input/tex/TexConstants';
+import { Token } from 'mathjax-full/mjs/input/tex/Token.js'
+import { TexConstant } from 'mathjax-full/mjs/input/tex/TexConstants.js';
 import { processComplexNumber, processComplexQuantity } from './complexMethods';
 import { processNumberList } from './numlistMethods';
 import { processNumberProduct } from './numproductMethods';
@@ -95,7 +95,7 @@ const methodMap: Record<string, (parser: TexParser) => void> = {
 export const UserDefinedUnitsKey = 'siunitxUnits';
 export const UserDefinedUnitOptionsKey = 'siunitxUnitOptions';
 
-function angleChars(parser: TexParser, mchar: TexSymbol) {
+function angleChars(parser: TexParser, mchar: Token) {
     const def = mchar.attributes || {};
     def.mathvariant = TexConstant.Variant.NORMAL;
     def.class = 'MathML-Unit';

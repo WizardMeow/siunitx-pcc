@@ -1,8 +1,8 @@
-import TexParser from "mathjax-full/js/input/tex/TexParser";
+import TexParser from "mathjax-full/mjs/input/tex/TexParser.js";
 import { IOptions, findOptions } from "./options/options";
 import { INumberPiece, parseNumber } from "./numMethods";
 import { postProcessNumber } from "./numPostProcessMethods";
-import { MmlNode } from "mathjax-full/js/core/MmlTree/MmlNode";
+import { MmlNode } from "mathjax-full/mjs/core/MmlTree/MmlNode.js";
 import { createExponentMml, displayOutputMml } from "./numDisplayMethods";
 import { ExponentsMode } from "./options/listOptions";
 
